@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dischi</title>
+    <!-- FONT AWESOME 4.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- VUE -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- LINK TO AXIOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+
+
+</head>
+<body>
+    <body>
+        <div id="root">
+          <header>
+              <div class="container">
+                  <img src="logo.png" alt="logo" />
+              </div>
+          </header>
+          <div class="select">
+            <select class="genre" name="" v-model='genreInput'>
+                  <option value="All"> All</option>
+                  <option value="Pop"> Pop</option>
+                  <option value="Rock">Rock</option>
+                  <option value="Metal">Metal</option>
+                  <option value="Jazz">Jazz</option>
+            </select>
+          </div>
+    
+          <div class="cds-container container">
+    
+              <!-- Disco ad esempio -->
+              <div class="cd " v-for="cd in cdsFiltered">
+                  <img :src="cd.poster" alt="">
+                  <h3>{{cd.title}}</h3>
+                  <span class="author">{{cd.author}}</span>
+                  <span class="year">{{cd.year}}</span>
+              </div>
+          </div>
+        </body>    
+<!-- collegamenti al JS -->
+<script src="script.js" charset="utf-8"></script>
+</html>

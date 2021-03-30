@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*intestazione*/
+header {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(10, 10, 65);
+}
+
+/*posizione immagine*/
+header img {
+    height: 50px;
+    margin-top: 10px;
+}
+
+/*corpo*/
+
+body {
+    background-color: blue;
+    min-height: 100vh;
+}
+
+/*classe contenitore*/
+.container {
+    width: 1070px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*menu select*/
+.select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+  select{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+  }
+
+
+  /*dischi*/
+  .cds-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+/*caratteristiche cd*/
+.cd {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 200px;
+    padding: 20px;
+    margin: 10px 20px;
+    height: 360px;
+    background: rgb(25, 50, 75);
+    text-align: center;
+}
+
+/*immagine cd*/
+.cd img {
+    max-width: 100%;
+}
+
+/*titolo cd*/
+.cd h3 {
+    margin: 20px 0;
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+/*autore cd*/
+.cd span.author {
+    color: grey;
+    font-size: 20px;
+}
+
+/*autore cd*/
+.cd span.year {
+    color: grey;
+}
+
+
+
